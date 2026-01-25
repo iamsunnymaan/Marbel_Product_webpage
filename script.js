@@ -169,8 +169,37 @@ document.addEventListener('DOMContentLoaded', function() {
 // COLLECTION CATEGORY TABS
 document.addEventListener('DOMContentLoaded', function() {
     const categoryCards = document.querySelectorAll('.category-card');
+    const collectionItems = document.querySelectorAll('.collection-item');
+    const categoryDescriptions = document.querySelectorAll('.category-description');
     
     if (!categoryCards.length) return;
+    
+    function filterGallery(category) {
+        collectionItems.forEach(item => {
+            if (category === 'popular') {
+                // Show all items for "popular"
+                item.classList.remove('hidden');
+            } else {
+                const itemCategory = item.getAttribute('data-category');
+                if (itemCategory === category) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            }
+        });
+    }
+    
+    function updateDescription(category) {
+        categoryDescriptions.forEach(desc => {
+            const descCategory = desc.getAttribute('data-category');
+            if (descCategory === category) {
+                desc.classList.add('active');
+            } else {
+                desc.classList.remove('active');
+            }
+        });
+    }
     
     categoryCards.forEach(card => {
         card.addEventListener('click', function() {
@@ -183,12 +212,11 @@ document.addEventListener('DOMContentLoaded', function() {
             // Get the category data
             const category = this.getAttribute('data-category');
             
-            // Here you can filter the collection gallery based on category
-            // For now, we'll just log it
-            console.log('Selected category:', category);
+            // Filter the gallery
+            filterGallery(category);
             
-            // You can add functionality to filter gallery items here
-            // filterGallery(category);
+            // Update description
+            updateDescription(category);
         });
     });
 });

@@ -67,42 +67,204 @@
         </div>
 
         <div class="collection-categories">
-            <button class="category-card active" data-category="popular">
+            <button class="category-card collection-categories-description active" data-category="popular">
                 <h3>Popular Marble</h3>
             </button>
-            <button class="category-card" data-category="origin">
+            <button class="category-card collection-categories-description" data-category="origin">
                 <h3>Marble by Origin</h3>
             </button>
-            <button class="category-card" data-category="colours">
+            <button class="category-card collection-categories-description" data-category="colours">
                 <h3>Marble by Colours</h3>
             </button>
-            <button class="category-card" data-category="pattern">
+            <button class="category-card collection-categories-description" data-category="pattern">
                 <h3>Based on Pattern and Design</h3>
             </button>
-            <button class="category-card" data-category="usage">
+            <button class="category-card collection-categories-description" data-category="usage">
                 <h3>Marble by Usage</h3>
             </button>
         </div>
 
+        <div class="category-description-container">
+            <p class="category-description active" data-category="popular">
+                Discover our most sought-after marble varieties, featuring timeless classics that have adorned prestigious spaces for generations. These premium selections combine exceptional beauty with unmatched durability.
+            </p>
+            <p class="category-description" data-category="origin">
+                Explore marble sourced from renowned quarries across India, each region offering unique characteristics and natural beauty. From Rajasthan's Makrana to Karnataka's premium stones, experience the finest Indian marble.
+            </p>
+            <p class="category-description" data-category="colours">
+                Browse our extensive color palette ranging from pristine whites and elegant blacks to warm beiges and sophisticated grays. Find the perfect shade to complement your design vision.
+            </p>
+            <p class="category-description" data-category="pattern">
+                Admire nature's artistry with marble featuring distinctive veining, striking patterns, and unique formations. Each piece tells its own story through intricate natural designs.
+            </p>
+            <p class="category-description" data-category="usage">
+                Select marble optimized for specific applications - from luxurious flooring and elegant wall cladding to stunning countertops and decorative features. Quality crafted for every purpose.
+            </p>
+        </div>
+
         <div class="collection-gallery">
-            <div class="collection-item">
-                <img src="Images/collection/marble-1.jpg" alt="Marble Collection">
+            <div class="collection-item" data-category="popular">
+                <img src="https://images.unsplash.com/photo-1615874694520-474822394e73?w=600&q=80" alt="White Marble Collection">
+                <div class="collection-overlay">
+                    <h4>Carrara White Marble</h4>
+                </div>
             </div>
-            <div class="collection-item">
-                <img src="Images/collection/marble-2.jpg" alt="Marble Collection">
+            <div class="collection-item" data-category="popular">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80" alt="Black Marble Collection">
+                <div class="collection-overlay">
+                    <h4>Black Galaxy Marble</h4>
+                </div>
             </div>
-            <div class="collection-item">
-                <img src="Images/collection/marble-3.jpg" alt="Marble Collection">
+            <div class="collection-item" data-category="colours">
+                <img src="https://images.unsplash.com/photo-1554188248-986adbb73be4?w=600&q=80" alt="Beige Marble Collection">
+                <div class="collection-overlay">
+                    <h4>Crema Marfil Marble</h4>
+                </div>
             </div>
-            <div class="collection-item">
-                <img src="Images/collection/marble-4.jpg" alt="Marble Collection">
+            <div class="collection-item" data-category="pattern">
+                <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=600&q=80" alt="Veined Marble Collection">
+                <div class="collection-overlay">
+                    <h4>Calacatta Gold Marble</h4>
+                </div>
             </div>
-            <div class="collection-item">
-                <img src="Images/collection/marble-5.jpg" alt="Marble Collection">
+            <div class="collection-item" data-category="origin">
+                <img src="https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=600&q=80" alt="Indian Marble Collection">
+                <div class="collection-overlay">
+                    <h4>Indian Makrana Marble</h4>
+                </div>
             </div>
-            <div class="collection-item">
-                <img src="Images/collection/marble-6.jpg" alt="Marble Collection">
+            <div class="collection-item" data-category="usage">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Flooring Marble Collection">
+                <div class="collection-overlay">
+                    <h4>Statuario Marble Flooring</h4>
+                </div>
             </div>
+        </div>
+
+        <div class="collection-cta">
+            <a href="product.html" class="view-all-btn">View All Products</a>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="section-header">
+            <span class="section-tag">Our Work</span>
+            <h2>Project Gallery</h2>
+            <p>Explore our stunning collection of completed projects and material installations</p>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="residential kitchen">
+                <img src="https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=600&q=80" alt="Luxury Kitchen Marble Countertop">
+                <div class="gallery-overlay">
+                    <h3>Luxury Kitchen</h3>
+                    <p>Carrara White Marble Countertop</p>
+                    <span class="gallery-icon">+</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="commercial">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Hotel Lobby Flooring">
+                <div class="gallery-overlay">
+                    <h3>Hotel Lobby</h3>
+                    <p>Italian Marble Flooring</p>
+                    <span class="gallery-icon">+</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item gallery-wide" data-category="residential bathroom">
+                <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80" alt="Master Bathroom">
+                <div class="gallery-overlay">
+                    <h3>Master Bathroom</h3>
+                    <p>Calacatta Gold Marble</p>
+                    <span class="gallery-icon">+</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item gallery-wide" data-category="commercial">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Office Reception">
+                <div class="gallery-overlay">
+                    <h3>Corporate Office</h3>
+                    <p>Black Galaxy Granite Reception</p>
+                    <span class="gallery-icon">+</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item gallery-tall" data-category="outdoor">
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Outdoor Patio">
+                <div class="gallery-overlay">
+                    <h3>Outdoor Patio</h3>
+                    <p>Sandstone Tiles</p>
+                    <span class="gallery-icon">+</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="residential">
+                <img src="https://images.unsplash.com/photo-1615874694520-474822394e73?w=600&q=80" alt="Living Room Feature Wall">
+                <div class="gallery-overlay">
+                    <h3>Feature Wall</h3>
+                    <p>Onyx Marble Backlit</p>
+                    <span class="gallery-icon">+</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="kitchen">
+                <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&q=80" alt="Modern Kitchen Island">
+                <div class="gallery-overlay">
+                    <h3>Kitchen Island</h3>
+                    <p>Emperador Brown Marble</p>
+                    <span class="gallery-icon">+</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="commercial">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Restaurant Interior">
+                <div class="gallery-overlay">
+                    <h3>Restaurant Interior</h3>
+                    <p>Statuario Marble Tables</p>
+                    <span class="gallery-icon">+</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="bathroom">
+                <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=600&q=80" alt="Spa Bathroom">
+                <div class="gallery-overlay">
+                    <h3>Spa Bathroom</h3>
+                    <p>Travertine Wall Tiles</p>
+                    <span class="gallery-icon">+</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item gallery-wide" data-category="outdoor">
+                <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80" alt="Pool Deck">
+                <div class="gallery-overlay">
+                    <h3>Pool Deck</h3>
+                    <p>Non-Slip Granite Pavers</p>
+                    <span class="gallery-icon">+</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="residential">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80" alt="Staircase Design">
+                <div class="gallery-overlay">
+                    <h3>Grand Staircase</h3>
+                    <p>White Marble Steps</p>
+                    <span class="gallery-icon">+</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="kitchen residential">
+                <img src="https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?w=600&q=80" alt="Kitchen Backsplash">
+                <div class="gallery-overlay">
+                    <h3>Kitchen Backsplash</h3>
+                    <p>Herringbone Marble Pattern</p>
+                    <span class="gallery-icon">+</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery-load-more">
+            <a href="gallery.html" class="view-all-btn">View More Projects</a>
         </div>
     </section>
 
