@@ -32,6 +32,393 @@
         <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
     </header>
 
+    <!-- Open Positions Section -->
+    <section class="open-positions-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">Current Openings</span>
+                <h2 class="section-title">Open Positions</h2>
+                <p class="section-description">Explore opportunities to join our growing team and make your mark in the world of luxury stone craftsmanship.</p>
+            </div>
+            
+            <div class="positions-container">
+                <!-- Filter Sidebar -->
+                <aside class="filter-sidebar">
+                    <div class="filter-header">
+                        <h3>Filter Jobs</h3>
+                        <button class="clear-filters-btn" onclick="clearAllJobFilters()">Clear All</button>
+                    </div>
+                    
+                    <!-- Location Filter -->
+                    <div class="filter-group">
+                        <h4 class="filter-title">Location</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="location" value="mumbai">
+                                <span>Mumbai</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="location" value="delhi">
+                                <span>Delhi</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="location" value="rajasthan">
+                                <span>Rajasthan</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="location" value="multi-location">
+                                <span>Multi-location</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Department Filter -->
+                    <div class="filter-group">
+                        <h4 class="filter-title">Department</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="department" value="production">
+                                <span>Production</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="department" value="design">
+                                <span>Design</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="department" value="quality">
+                                <span>Quality Control</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="department" value="marketing">
+                                <span>Marketing</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="department" value="operations">
+                                <span>Operations</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Role Type Filter -->
+                    <div class="filter-group">
+                        <h4 class="filter-title">Role Type</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="role-type" value="full-time">
+                                <span>Full-time</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="role-type" value="part-time">
+                                <span>Part-time</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="role-type" value="contract">
+                                <span>Contract</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="role-type" value="apprenticeship">
+                                <span>Apprenticeship</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience Level Filter -->
+                    <div class="filter-group">
+                        <h4 class="filter-title">Experience Level</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="experience" value="fresher">
+                                <span>Fresher</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="experience" value="1-3">
+                                <span>1-3 years</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="experience" value="3-5">
+                                <span>3-5 years</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="experience" value="5+">
+                                <span>5+ years</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Skills Filter -->
+                    <div class="filter-group">
+                        <h4 class="filter-title">Skills</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="skills" value="craftsmanship">
+                                <span>Craftsmanship</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="skills" value="design">
+                                <span>Design</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="skills" value="leadership">
+                                <span>Leadership</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="skills" value="technical">
+                                <span>Technical Skills</span>
+                            </label>
+                        </div>
+                    </div>
+                </aside>
+                
+                <!-- Positions Grid -->
+                <div class="positions-grid" id="positionsGrid">
+                    <!-- Position Box 1 -->
+                    <div class="position-box" data-location="mumbai" data-department="production" data-role-type="full-time" data-experience="5+">
+                        <h3 class="position-box-title">Senior Stone Craftsman</h3>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>📍</i> Mumbai</span>
+                            <span class="meta-item"><i>💼</i> Full-time</span>
+                        </div>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>⏱️</i> 5+ years</span>
+                            <span class="meta-item"><i>🏢</i> Production</span>
+                        </div>
+                        <button class="apply-box-btn" onclick="openApplicationModal('Senior Stone Craftsman')">Apply Now</button>
+                    </div>
+
+                    <!-- Position Box 2 -->
+                    <div class="position-box" data-location="delhi" data-department="design" data-role-type="full-time" data-experience="3-5">
+                        <h3 class="position-box-title">Interior Design Consultant</h3>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>📍</i> Delhi</span>
+                            <span class="meta-item"><i>💼</i> Full-time</span>
+                        </div>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>⏱️</i> 3+ years</span>
+                            <span class="meta-item"><i>🏢</i> Design</span>
+                        </div>
+                        <button class="apply-box-btn" onclick="openApplicationModal('Interior Design Consultant')">Apply Now</button>
+                    </div>
+
+                    <!-- Position Box 3 -->
+                    <div class="position-box" data-location="rajasthan" data-department="quality" data-role-type="full-time" data-experience="3-5">
+                        <h3 class="position-box-title">Quality Assurance Manager</h3>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>📍</i> Rajasthan</span>
+                            <span class="meta-item"><i>💼</i> Full-time</span>
+                        </div>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>⏱️</i> 4+ years</span>
+                            <span class="meta-item"><i>🏢</i> Quality</span>
+                        </div>
+                        <button class="apply-box-btn" onclick="openApplicationModal('Quality Assurance Manager')">Apply Now</button>
+                    </div>
+
+                    <!-- Position Box 4 -->
+                    <div class="position-box" data-location="mumbai" data-department="marketing" data-role-type="full-time" data-experience="3-5">
+                        <h3 class="position-box-title">Digital Marketing Manager</h3>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>📍</i> Mumbai</span>
+                            <span class="meta-item"><i>💼</i> Full-time</span>
+                        </div>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>⏱️</i> 3+ years</span>
+                            <span class="meta-item"><i>🏢</i> Marketing</span>
+                        </div>
+                        <button class="apply-box-btn" onclick="openApplicationModal('Digital Marketing Manager')">Apply Now</button>
+                    </div>
+
+                    <!-- Position Box 5 -->
+                    <div class="position-box" data-location="multi-location" data-department="operations" data-role-type="full-time" data-experience="1-3">
+                        <h3 class="position-box-title">Project Coordinator</h3>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>📍</i> Multi-location</span>
+                            <span class="meta-item"><i>💼</i> Full-time</span>
+                        </div>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>⏱️</i> 2+ years</span>
+                            <span class="meta-item"><i>🏢</i> Operations</span>
+                        </div>
+                        <button class="apply-box-btn" onclick="openApplicationModal('Project Coordinator')">Apply Now</button>
+                    </div>
+
+                    <!-- Position Box 6 -->
+                    <div class="position-box" data-location="rajasthan" data-department="production" data-role-type="apprenticeship" data-experience="fresher">
+                        <h3 class="position-box-title">Stone Apprentice</h3>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>📍</i> Rajasthan</span>
+                            <span class="meta-item"><i>💼</i> Apprenticeship</span>
+                        </div>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>⏱️</i> Fresher</span>
+                            <span class="meta-item"><i>🏢</i> Production</span>
+                        </div>
+                        <button class="apply-box-btn" onclick="openApplicationModal('Stone Apprentice')">Apply Now</button>
+                    </div>
+
+                    <!-- Position Box 7 -->
+                    <div class="position-box" data-location="delhi" data-department="operations" data-role-type="full-time" data-experience="3-5">
+                        <h3 class="position-box-title">Supply Chain Manager</h3>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>📍</i> Delhi</span>
+                            <span class="meta-item"><i>💼</i> Full-time</span>
+                        </div>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>⏱️</i> 4+ years</span>
+                            <span class="meta-item"><i>🏢</i> Operations</span>
+                        </div>
+                        <button class="apply-box-btn" onclick="openApplicationModal('Supply Chain Manager')">Apply Now</button>
+                    </div>
+
+                    <!-- Position Box 8 -->
+                    <div class="position-box" data-location="mumbai" data-department="design" data-role-type="full-time" data-experience="5+">
+                        <h3 class="position-box-title">Lead Architect</h3>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>📍</i> Mumbai</span>
+                            <span class="meta-item"><i>💼</i> Full-time</span>
+                        </div>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>⏱️</i> 6+ years</span>
+                            <span class="meta-item"><i>🏢</i> Design</span>
+                        </div>
+                        <button class="apply-box-btn" onclick="openApplicationModal('Lead Architect')">Apply Now</button>
+                    </div>
+
+                    <!-- Position Box 9 -->
+                    <div class="position-box" data-location="rajasthan" data-department="production" data-role-type="contract" data-experience="1-3">
+                        <h3 class="position-box-title">Stone Cutting Operator</h3>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>📍</i> Rajasthan</span>
+                            <span class="meta-item"><i>💼</i> Contract</span>
+                        </div>
+                        <div class="position-box-meta">
+                            <span class="meta-item"><i>⏱️</i> 2+ years</span>
+                            <span class="meta-item"><i>🏢</i> Production</span>
+                        </div>
+                        <button class="apply-box-btn" onclick="openApplicationModal('Stone Cutting Operator')">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section class="internship-section">
+        <div class="container">
+            <div class="internship-container">
+                <div class="internship-content">
+                    <span class="sub-heading">Start Your Journey</span>
+                    <h2 class="internship-title">Internship Program</h2>
+                    <p class="internship-description">Launch your career in the world of luxury stone craftsmanship with our comprehensive internship program. Work alongside master artisans, learn traditional techniques, and gain hands-on experience in state-of-the-art facilities.</p>
+                    
+                    <div class="internship-benefits">
+                        <div class="internship-benefit-item">
+                            <span class="benefit-icon-small">✓</span>
+                            <span>3-6 month duration</span>
+                        </div>
+                        <div class="internship-benefit-item">
+                            <span class="benefit-icon-small">✓</span>
+                            <span>Stipend provided</span>
+                        </div>
+                        <div class="internship-benefit-item">
+                            <span class="benefit-icon-small">✓</span>
+                            <span>Mentorship from experts</span>
+                        </div>
+                        <div class="internship-benefit-item">
+                            <span class="benefit-icon-small">✓</span>
+                            <span>Full-time conversion opportunities</span>
+                        </div>
+                        <div class="internship-benefit-item">
+                            <span class="benefit-icon-small">✓</span>
+                            <span>Certificate upon completion</span>
+                        </div>
+                        <div class="internship-benefit-item">
+                            <span class="benefit-icon-small">✓</span>
+                            <span>Exposure to real projects</span>
+                        </div>
+                    </div>
+                    
+                    <div class="internship-requirements">
+                        <h4>Who Can Apply?</h4>
+                        <ul>
+                            <li>Students pursuing degrees in Design, Architecture, Engineering, or related fields</li>
+                            <li>Recent graduates looking to gain industry experience</li>
+                            <li>Passionate individuals eager to learn stone craftsmanship</li>
+                            <li>Available for minimum 3 months commitment</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="internship-apply-btn" onclick="openApplicationModal('Internship Program')">Apply for Internship</button>
+                </div>
+                
+                <div class="internship-image">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800" alt="Interns at work">
+                    <div class="internship-image-overlay">
+                        <div class="internship-stats">
+                            <div class="stat-item">
+                                <h3>100+</h3>
+                                <p>Interns Trained</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>85%</h3>
+                                <p>Conversion Rate</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>4.8/5</h3>
+                                <p>Average Rating</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="careers-cta-section">
+        <div class="careers-cta-content">
+            <h2>Don't See the Right Position?</h2>
+            <p>We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.</p>
+            <button class="connect-btn" onclick="openGeneralApplicationModal()">Submit General Application</button>
+        </div>
+    </section>
+
+    <!-- Application Process Section -->
+    <section class="application-process-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">How to Apply</span>
+                <h2 class="section-title">Application Process</h2>
+                <p class="section-description">Join us in four simple steps</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Apply Online</h3>
+                    <p>Submit your application through our online form with your resume and portfolio.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Initial Screening</h3>
+                    <p>Our HR team reviews applications and shortlists candidates within 1 week.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Interview</h3>
+                    <p>Selected candidates are invited for technical and HR interviews.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Welcome Aboard</h3>
+                    <p>Successful candidates receive offer letters and join our team!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-left">

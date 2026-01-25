@@ -1,0 +1,261 @@
+{
+  "jobPositions": [
+    {
+      "id": 1,
+      "title": "Senior Stone Craftsman",
+      "location": "Mumbai",
+      "department": "Production",
+      "roleType": "Full-time",
+      "experience": "5+ years",
+      "experienceLevel": "5+",
+      "skills": ["craftsmanship", "technical", "leadership"],
+      "description": "Lead the production of premium stone pieces with expert craftsmanship and guide junior artisans.",
+      "responsibilities": [
+        "Oversee stone cutting, shaping, and finishing operations",
+        "Mentor and train junior craftsmen",
+        "Ensure quality standards are met",
+        "Collaborate with design team on custom projects",
+        "Maintain tools and equipment"
+      ],
+      "requirements": [
+        "5+ years of experience in stone craftsmanship",
+        "Expert knowledge of marble and granite work",
+        "Strong attention to detail",
+        "Ability to read technical drawings",
+        "Leadership and mentoring skills"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Interior Design Consultant",
+      "location": "Delhi",
+      "department": "Design",
+      "roleType": "Full-time",
+      "experience": "3+ years",
+      "experienceLevel": "3-5",
+      "skills": ["design", "technical"],
+      "description": "Work with clients to create stunning interior designs featuring our premium stone collections.",
+      "responsibilities": [
+        "Consult with clients on interior design projects",
+        "Create design concepts and presentations",
+        "Select appropriate stone materials for projects",
+        "Coordinate with production team",
+        "Manage client relationships"
+      ],
+      "requirements": [
+        "3+ years in interior design",
+        "Degree in Interior Design or Architecture",
+        "Strong knowledge of stone applications",
+        "Excellent communication skills",
+        "Proficiency in design software (AutoCAD, SketchUp)"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Quality Assurance Manager",
+      "location": "Rajasthan",
+      "department": "Quality Control",
+      "roleType": "Full-time",
+      "experience": "4+ years",
+      "experienceLevel": "3-5",
+      "skills": ["technical", "leadership"],
+      "description": "Ensure the highest quality standards across all stone products and manufacturing processes.",
+      "responsibilities": [
+        "Develop and implement quality control procedures",
+        "Inspect raw materials and finished products",
+        "Conduct regular quality audits",
+        "Train staff on quality standards",
+        "Document and report quality metrics"
+      ],
+      "requirements": [
+        "4+ years in quality assurance/control",
+        "Knowledge of stone industry standards",
+        "Strong analytical skills",
+        "Experience with quality management systems",
+        "Excellent documentation skills"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Digital Marketing Manager",
+      "location": "Mumbai",
+      "department": "Marketing",
+      "roleType": "Full-time",
+      "experience": "3+ years",
+      "experienceLevel": "3-5",
+      "skills": ["technical", "leadership"],
+      "description": "Lead digital marketing initiatives to promote our luxury stone collections and brand.",
+      "responsibilities": [
+        "Develop and execute digital marketing strategies",
+        "Manage social media presence",
+        "Create content for website and campaigns",
+        "Analyze marketing metrics and ROI",
+        "Coordinate with creative team"
+      ],
+      "requirements": [
+        "3+ years in digital marketing",
+        "Experience in luxury goods marketing preferred",
+        "Strong knowledge of SEO, SEM, social media",
+        "Excellent content creation skills",
+        "Data-driven approach"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Project Coordinator",
+      "location": "Multi-location",
+      "department": "Operations",
+      "roleType": "Full-time",
+      "experience": "2+ years",
+      "experienceLevel": "1-3",
+      "skills": ["technical"],
+      "description": "Coordinate stone installation projects and ensure smooth execution from start to finish.",
+      "responsibilities": [
+        "Coordinate project timelines and deliverables",
+        "Communicate with clients and contractors",
+        "Track project progress and budgets",
+        "Resolve project-related issues",
+        "Prepare project reports"
+      ],
+      "requirements": [
+        "2+ years in project coordination",
+        "Strong organizational skills",
+        "Excellent communication abilities",
+        "Proficiency in project management software",
+        "Willingness to travel"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Stone Apprentice",
+      "location": "Rajasthan",
+      "department": "Production",
+      "roleType": "Apprenticeship",
+      "experience": "Fresher",
+      "experienceLevel": "fresher",
+      "skills": ["craftsmanship"],
+      "description": "Learn the art of stone craftsmanship under experienced master artisans.",
+      "responsibilities": [
+        "Assist senior craftsmen in stone work",
+        "Learn cutting, shaping, and finishing techniques",
+        "Maintain workshop cleanliness and safety",
+        "Follow instructions and safety protocols",
+        "Develop fundamental craftsmanship skills"
+      ],
+      "requirements": [
+        "Passion for learning stone craftsmanship",
+        "Physical fitness for manual work",
+        "Attention to detail",
+        "Willingness to learn",
+        "Commitment to 12-month apprenticeship"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Supply Chain Manager",
+      "location": "Delhi",
+      "department": "Operations",
+      "roleType": "Full-time",
+      "experience": "4+ years",
+      "experienceLevel": "3-5",
+      "skills": ["technical", "leadership"],
+      "description": "Manage supply chain operations ensuring timely procurement and delivery of materials.",
+      "responsibilities": [
+        "Oversee procurement of raw materials",
+        "Manage vendor relationships",
+        "Optimize inventory levels",
+        "Coordinate logistics and deliveries",
+        "Implement supply chain improvements"
+      ],
+      "requirements": [
+        "4+ years in supply chain management",
+        "Experience in manufacturing/construction industry",
+        "Strong negotiation skills",
+        "Knowledge of ERP systems",
+        "Excellent problem-solving abilities"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Lead Architect",
+      "location": "Mumbai",
+      "department": "Design",
+      "roleType": "Full-time",
+      "experience": "6+ years",
+      "experienceLevel": "5+",
+      "skills": ["design", "leadership", "technical"],
+      "description": "Lead architectural design projects incorporating our premium stone collections.",
+      "responsibilities": [
+        "Develop architectural concepts and designs",
+        "Lead design team on major projects",
+        "Collaborate with clients and consultants",
+        "Create detailed technical drawings",
+        "Ensure designs meet building codes"
+      ],
+      "requirements": [
+        "6+ years of architectural experience",
+        "Bachelor's or Master's in Architecture",
+        "Licensed architect preferred",
+        "Expertise in stone applications in architecture",
+        "Strong portfolio of completed projects"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Stone Cutting Operator",
+      "location": "Rajasthan",
+      "department": "Production",
+      "roleType": "Contract",
+      "experience": "2+ years",
+      "experienceLevel": "1-3",
+      "skills": ["craftsmanship", "technical"],
+      "description": "Operate stone cutting machinery to precise specifications for various projects.",
+      "responsibilities": [
+        "Operate stone cutting equipment safely",
+        "Cut stone to specified dimensions",
+        "Perform quality checks on cut pieces",
+        "Maintain cutting equipment",
+        "Follow safety protocols"
+      ],
+      "requirements": [
+        "2+ years operating stone cutting machinery",
+        "Knowledge of stone types and properties",
+        "Ability to read technical drawings",
+        "Safety certification preferred",
+        "Physical stamina for manual work"
+      ]
+    }
+  ],
+  "internshipProgram": {
+    "title": "Internship Program",
+    "duration": "3-6 months",
+    "locations": ["Mumbai", "Delhi", "Rajasthan"],
+    "departments": ["Production", "Design", "Quality Control", "Marketing", "Operations"],
+    "benefits": [
+      "3-6 month duration",
+      "Stipend provided",
+      "Mentorship from experts",
+      "Full-time conversion opportunities",
+      "Certificate upon completion",
+      "Exposure to real projects"
+    ],
+    "eligibility": [
+      "Students pursuing degrees in Design, Architecture, Engineering, or related fields",
+      "Recent graduates looking to gain industry experience",
+      "Passionate individuals eager to learn stone craftsmanship",
+      "Available for minimum 3 months commitment"
+    ],
+    "statistics": {
+      "internsTrained": "100+",
+      "conversionRate": "85%",
+      "averageRating": "4.8/5"
+    }
+  },
+  "filters": {
+    "locations": ["Mumbai", "Delhi", "Rajasthan", "Multi-location"],
+    "departments": ["Production", "Design", "Quality Control", "Marketing", "Operations"],
+    "roleTypes": ["Full-time", "Part-time", "Contract", "Apprenticeship"],
+    "experienceLevels": ["Fresher", "1-3 years", "3-5 years", "5+ years"],
+    "skills": ["Craftsmanship", "Design", "Leadership", "Technical Skills"]
+  }
+}
