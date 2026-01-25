@@ -42,11 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('teamModal');
     const closeBtn = document.getElementById('closeModal');
     const overlay = document.querySelector('.modal-overlay');
-    const readMoreBtns = document.querySelectorAll('.read-more-btn');
+    const readMoreLinks = document.querySelectorAll('.read-more-link');
 
     // Open modal
-    readMoreBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
+    readMoreLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
             const memberId = this.getAttribute('data-member');
             const member = teamMembers[memberId];
             
