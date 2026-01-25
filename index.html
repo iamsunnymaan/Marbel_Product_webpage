@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marbel Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">MARBEL</div>
+
+        <nav class="nav-box">
+            <div class="nav-magnetic-bg"></div>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="product.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="career.html" class="nav-link">Career</a></li>
+                <li class="nav-item"><a href="#address" class="nav-link">Address</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <button class="connect-btn">Let Connect</button>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+    </header>
+
+    <section class="hero-container">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('Images/hero/IMG_HERO_01.webp')"></div>
+            <div class="slide" style="background-image: url('Images/hero/IMG_HERO_02.jpg')"></div>
+            <div class="slide" style="background-image: url('Images/hero/IMG_HERO_03.jpeg')"></div>
+            <div class="slide" style="background-image: url('Images/hero/IMG_HERO_04.jpg')"></div>
+            <div class="slide" style="background-image: url('Images/hero/IMG_HERO_05.jpg')"></div>
+            
+            <div class="hero-overlay">
+                <h1>Sculpted by Nature</h1>
+                <p>Refined by Human Hands</p>
+            </div>
+            
+            <a href="product.html" class="hero-cta-btn">View All Products</a>
+            
+            <div class="slider-controls">
+                <button id="prev-btn" class="arrow-btn prev-btn" aria-label="Previous slide">←</button>
+                <div class="bullet-nav" id="bullet-nav"></div>
+                <button id="next-btn" class="arrow-btn next-btn" aria-label="Next slide">→</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro-section">
+        <div class="intro-content">
+            <h2>Explore Our Luxury Stone Collection</h2>
+            <p>Welcome to MARBEL, where nature meets master craftsmanship. We create timeless beauty using the finest Indian natural stones, offering elegant flooring and wall solutions along with exquisite sculptures, fountains, and artistic murals. Every creation reflects our commitment to superior quality, refined design, and exceptional craftsmanship, transforming ordinary spaces into enduring works of art.</p>
+        </div>
+    </section>
+
+    <section class="collection-section">
+        <div class="collection-header">
+            <h2>Marbel Collection</h2>
+        </div>
+
+        <div class="collection-categories">
+            <button class="category-card active" data-category="popular">
+                <h3>Popular Marble</h3>
+            </button>
+            <button class="category-card" data-category="origin">
+                <h3>Marble by Origin</h3>
+            </button>
+            <button class="category-card" data-category="colours">
+                <h3>Marble by Colours</h3>
+            </button>
+            <button class="category-card" data-category="pattern">
+                <h3>Based on Pattern and Design</h3>
+            </button>
+            <button class="category-card" data-category="usage">
+                <h3>Marble by Usage</h3>
+            </button>
+        </div>
+
+        <div class="collection-gallery">
+            <div class="collection-item">
+                <img src="Images/collection/marble-1.jpg" alt="Marble Collection">
+            </div>
+            <div class="collection-item">
+                <img src="Images/collection/marble-2.jpg" alt="Marble Collection">
+            </div>
+            <div class="collection-item">
+                <img src="Images/collection/marble-3.jpg" alt="Marble Collection">
+            </div>
+            <div class="collection-item">
+                <img src="Images/collection/marble-4.jpg" alt="Marble Collection">
+            </div>
+            <div class="collection-item">
+                <img src="Images/collection/marble-5.jpg" alt="Marble Collection">
+            </div>
+            <div class="collection-item">
+                <img src="Images/collection/marble-6.jpg" alt="Marble Collection">
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
