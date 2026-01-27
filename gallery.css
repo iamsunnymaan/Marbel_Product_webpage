@@ -251,7 +251,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 100px 5%;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .video-showcase-header {

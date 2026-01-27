@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | LITHOS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-left">
+            <a href="index.html" class="logo" id="logo-link">LITHOS</a>
+        </div>
+        <nav class="nav-box" id="nav-box">
+            <div class="nav-magnetic-bg" id="nav-magnetic-bg"></div>
+            <ul class="nav-links" id="main-nav-links">
+                <li class="nav-item"><a href="index.html" id="home-link" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#gallery" id="gallery-link" class="nav-link">Gallery</a></li>
+                
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Products</a>
+                    <ul class="dropdown-content">
+                        <li class="sub-dropdown">
+                            <a href="#">Le Luxe</a>
+                            <ul class="sub-dropdown-content">
+                                <li><a href="#">Gajebo / Pergola</a></li>
+                                <li><a href="#">Stone Basin</a></li>
+                                <li><a href="#">Wall Murals</a></li>
+                                <li class="nested-dropdown">
+                                    <a href="#">Hardscape</a>
+                                    <ul class="nested-content">
+                                        <li><a href="#">Stone Sculptures</a></li>
+                                        <li><a href="#">Fountains</a></li>
+                                        <li><a href="#">Partitions</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Inlay</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-dropdown">
+                            <a href="#">Surface</a>
+                            <ul class="sub-dropdown-content">
+                                <li><a href="#">Sandstone Tiles</a></li>
+                                <li><a href="#">Limestone Tiles</a></li>
+                                <li><a href="#">Salestone Tiles</a></li>
+                                <li><a href="#">Basalt</a></li>
+                                <li><a href="#">Porcelain Tiles</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-dropdown">
+                            <a href="#">Temple</a>
+                            <ul class="sub-dropdown-content">
+                                <li><a href="#">Temple Carvings</a></li>
+                                <li><a href="#">Pillars & Torans</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-dropdown">
+                            <a href="#">Sculptures</a>
+                            <ul class="sub-dropdown-content">
+                                <li><a href="#">Stone Sculptures</a></li>
+                                <li><a href="#">Fountains</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a href="careers.html" id="careers-link" class="nav-link">Careers</a></li>
+                <li class="nav-item"><a href="about.html" id="about-link" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="index.html#location" id="address-link" class="nav-link">Address</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+            <button class="connect-btn">Let's Connect</button>
+        </div>
+    </header>
+
+    <!-- Fixed Background Image -->
+    <div class="product-background-overlay" id="product-background-overlay"></div>
+
+    <section class="product-details-container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="separator">→</span>
+            <a href="index.html#gallery">Gallery</a>
+            <span class="separator">→</span>
+            <span id="product-category"></span>
+            <span class="separator">→</span>
+            <span id="product-name-breadcrumb"></span>
+        </div>
+
+        <div class="product-details-wrapper">
+            <div class="product-image-section">
+                <div class="main-image-container">
+                    <img id="main-product-image" src="" alt="Product Image">
+                    <button class="image-zoom-btn" id="zoom-btn" aria-label="Zoom image">🔍</button>
+                </div>
+                <div class="thumbnail-gallery" id="thumbnail-gallery">
+                    <!-- Thumbnails will be dynamically inserted -->
+                </div>
+            </div>
+
+            <div class="product-info-section">
+                <h1 id="product-title"></h1>
+                <div class="product-price-wrapper">
+                    <span class="product-price" id="product-price"></span>
+                    <span class="price-note">*Price may vary based on customization</span>
+                </div>
+
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Category:</span>
+                        <span class="meta-value" id="product-category-value"></span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Material:</span>
+                        <span class="meta-value" id="product-material"></span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Collection:</span>
+                        <span class="meta-value" id="product-collection"></span>
+                    </div>
+                </div>
+
+                <div class="product-description">
+                    <h3>Description</h3>
+                    <p id="product-description-text">
+                        A masterpiece of natural stone craftsmanship, meticulously carved and finished to perfection. 
+                        This luxury piece combines traditional artisanship with contemporary design, making it a 
+                        timeless addition to any architectural space. Each piece is unique, showcasing the natural 
+                        beauty and character of premium stone.
+                    </p>
+                </div>
+
+                <div class="product-features">
+                    <h3>Features</h3>
+                    <ul id="product-features-list">
+                        <li>Premium quality natural stone</li>
+                        <li>Handcrafted by skilled artisans</li>
+                        <li>Weather-resistant and durable</li>
+                        <li>Customizable dimensions available</li>
+                        <li>Easy maintenance and long-lasting</li>
+                        <li>Eco-friendly and sustainable sourcing</li>
+                    </ul>
+                </div>
+
+                <div class="product-specifications">
+                    <h3>Specifications</h3>
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Product ID:</span>
+                            <span class="spec-value" id="spec-product-id">-</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Dimensions:</span>
+                            <span class="spec-value">Custom Available</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Weight:</span>
+                            <span class="spec-value">Varies by Size</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Finish:</span>
+                            <span class="spec-value">Polished / Honed</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Origin:</span>
+                            <span class="spec-value">India</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Availability:</span>
+                            <span class="spec-value" style="color: #28a745; font-weight: 600;">In Stock</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-care">
+                    <h3>Care & Maintenance</h3>
+                    <div class="care-content">
+                        <p><strong>Daily Care:</strong></p>
+                        <ul>
+                            <li>Clean with soft, damp cloth</li>
+                            <li>Use pH-neutral stone cleaner</li>
+                            <li>Avoid acidic or abrasive cleaners</li>
+                        </ul>
+                        <p><strong>Periodic Maintenance:</strong></p>
+                        <ul>
+                            <li>Seal stone surface annually</li>
+                            <li>Professional cleaning every 2-3 years</li>
+                            <li>Inspect for cracks or damage regularly</li>
+                        </ul>
+                        <p><strong>Protection Tips:</strong></p>
+                        <ul>
+                            <li>Use coasters under glasses and cups</li>
+                            <li>Protect from extreme temperature changes</li>
+                            <li>Clean spills immediately to prevent staining</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-shipping">
+                    <h3>Shipping & Installation</h3>
+                    <div class="shipping-grid">
+                        <div class="shipping-item">
+                            <div class="shipping-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="1" y="3" width="15" height="13"/>
+                                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                                    <circle cx="5.5" cy="18.5" r="2.5"/>
+                                    <circle cx="18.5" cy="18.5" r="2.5"/>
+                                </svg>
+                            </div>
+                            <h4>Worldwide Shipping</h4>
+                            <p>We deliver to 50+ countries with secure packaging and tracking</p>
+                        </div>
+                        <div class="shipping-item">
+                            <div class="shipping-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                                </svg>
+                            </div>
+                            <h4>Premium Packaging</h4>
+                            <p>Custom crating and padding to ensure safe delivery</p>
+                        </div>
+                        <div class="shipping-item">
+                            <div class="shipping-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"/>
+                                    <polyline points="8 6 2 12 8 18"/>
+                                </svg>
+                            </div>
+                            <h4>Installation Support</h4>
+                            <p>Professional installation guidance and support available</p>
+                        </div>
+                        <div class="shipping-item">
+                            <div class="shipping-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </div>
+                            <h4>Delivery Timeline</h4>
+                            <p>2-4 weeks for standard orders, expedited options available</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-warranty">
+                    <h3>Warranty & Returns</h3>
+                    <div class="warranty-content">
+                        <div class="warranty-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <path d="M9 12l2 2 4-4"/>
+                            </svg>
+                            <div>
+                                <h4>Quality Guarantee</h4>
+                                <p>All products are inspected and certified before shipping. We guarantee the quality and authenticity of every stone piece.</p>
+                            </div>
+                        </div>
+                        <div class="warranty-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 11 12 14 22 4"/>
+                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+                            </svg>
+                            <div>
+                                <h4>Return Policy</h4>
+                                <p>30-day return policy for manufacturing defects. Custom orders are non-returnable unless damaged during shipping.</p>
+                            </div>
+                        </div>
+                        <div class="warranty-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <div>
+                                <h4>Customer Support</h4>
+                                <p>Our team is available to assist with any questions or concerns. Contact us via phone, email, or WhatsApp.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-actions">
+                    <button class="connect-btn primary-btn" id="enquire-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px; margin-right: 8px;">
+                            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        Send Enquiry
+                    </button>
+                    <button class="connect-btn secondary-btn" id="whatsapp-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" style="width: 20px; height: 20px; margin-right: 8px;">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        WhatsApp Enquiry
+                    </button>
+                </div>
+
+                <div class="product-guarantee">
+                    <div class="guarantee-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                        </svg>
+                        <span>Premium Quality Guaranteed</span>
+                    </div>
+                    <div class="guarantee-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        <span>Certified & Authentic</span>
+                    </div>
+                    <div class="guarantee-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Direct From Source</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="related-products-section">
+            <h2>Related Products</h2>
+            <div class="related-products-grid" id="related-products">
+                <!-- Related products will be dynamically inserted -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">LITHOS</div>
+                    <p class="footer-tagline">Sculpted by Nature, Refined by Human Hands</p>
+                </div>
+            </div>
+            <div>
+                <div class="footer-bottom-content">
+                    <div class="footer-left">
+                        <p>&copy; 2025 LITHOS. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Zoom Modal -->
+    <div id="image-zoom-modal" class="zoom-modal">
+        <div class="zoom-modal-overlay"></div>
+        <div class="zoom-modal-content">
+            <button class="zoom-close-btn" id="zoom-close-btn" aria-label="Close">×</button>
+            <img id="zoomed-image" src="" alt="Zoomed product">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="product-details.js"></script>
+    
+    <!-- Mobile Menu Toggle Fix -->
+    <script>
+        // Ensure mobile menu toggle works
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const navBox = document.getElementById('nav-box');
+            
+            if (mobileMenuToggle && navBox) {
+                // Function to close menu
+                function closeMenu() {
+                    navBox.classList.remove('active');
+                    mobileMenuToggle.textContent = '☰';
+                    mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = 'auto';
+                    
+                    // Close all dropdowns
+                    document.querySelectorAll('.nav-box .open').forEach(n => {
+                        n.classList.remove('open');
+                    });
+                }
+                
+                // Function to open menu
+                function openMenu() {
+                    navBox.classList.add('active');
+                    mobileMenuToggle.textContent = '✕';
+                    mobileMenuToggle.setAttribute('aria-expanded', 'true');
+                    document.body.style.overflow = 'hidden';
+                }
+                
+                // Toggle menu on button click
+                mobileMenuToggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    const isActive = navBox.classList.contains('active');
+                    
+                    if (isActive) {
+                        closeMenu();
+                    } else {
+                        openMenu();
+                    }
+                });
+                
+                // Close menu on escape key
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && navBox.classList.contains('active')) {
+                        closeMenu();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -8,9 +8,15 @@
       "roleType": "Full-time",
       "experience": "5+ years",
       "experienceLevel": "5+",
-      "skills": ["craftsmanship", "technical", "leadership"],
+      "salaryRange": "₹8-12 LPA",
+      "skills": ["Stone Craftsmanship", "Technical Drawing", "Quality Control", "Team Leadership"],
       "status": "open",
       "description": "Lead the production of premium stone pieces with expert craftsmanship and guide junior artisans.",
+      "whatYouDo": [
+        "Cut, shape, and finish premium marble and granite",
+        "Guide and mentor junior craftsmen",
+        "Ensure quality standards across all projects"
+      ],
       "responsibilities": [
         "Oversee stone cutting, shaping, and finishing operations",
         "Mentor and train junior craftsmen",
@@ -34,9 +40,15 @@
       "roleType": "Full-time",
       "experience": "3+ years",
       "experienceLevel": "3-5",
-      "skills": ["design", "technical"],
+      "salaryRange": "₹6-10 LPA",
+      "skills": ["Interior Design", "3D Visualization", "Client Management", "Material Selection"],
       "status": "open",
       "description": "Work with clients to create stunning interior designs featuring our premium stone collections.",
+      "whatYouDo": [
+        "Consult with clients on design requirements",
+        "Create 3D visualizations and mood boards",
+        "Select and specify stone materials for projects"
+      ],
       "responsibilities": [
         "Consult with clients on interior design projects",
         "Create design concepts and presentations",
@@ -60,9 +72,15 @@
       "roleType": "Full-time",
       "experience": "4+ years",
       "experienceLevel": "3-5",
-      "skills": ["technical", "leadership"],
+      "salaryRange": "₹6-10 LPA",
+      "skills": ["Quality Management", "ISO Standards", "Process Improvement", "Team Leadership"],
       "status": "open",
       "description": "Ensure the highest quality standards across all stone products and manufacturing processes.",
+      "whatYouDo": [
+        "Implement and maintain quality control systems",
+        "Lead quality audits and inspections",
+        "Drive continuous improvement initiatives"
+      ],
       "responsibilities": [
         "Develop and implement quality control procedures",
         "Inspect raw materials and finished products",
@@ -86,9 +104,15 @@
       "roleType": "Full-time",
       "experience": "3+ years",
       "experienceLevel": "3-5",
-      "skills": ["technical", "leadership"],
+      "salaryRange": "₹7-12 LPA",
+      "skills": ["Digital Marketing", "SEO/SEM", "Social Media", "Analytics"],
       "status": "closed",
       "description": "Lead digital marketing initiatives to promote our luxury stone collections and brand.",
+      "whatYouDo": [
+        "Develop and execute comprehensive digital strategies",
+        "Manage multi-channel marketing campaigns",
+        "Analyze performance and optimize ROI"
+      ],
       "responsibilities": [
         "Develop and execute digital marketing strategies",
         "Manage social media presence",
@@ -112,9 +136,15 @@
       "roleType": "Full-time",
       "experience": "2+ years",
       "experienceLevel": "1-3",
-      "skills": ["technical"],
+      "salaryRange": "₹4-7 LPA",
+      "skills": ["Project Management", "Communication", "Problem Solving", "MS Project"],
       "status": "open",
       "description": "Coordinate stone installation projects and ensure smooth execution from start to finish.",
+      "whatYouDo": [
+        "Manage project timelines and deliverables",
+        "Coordinate between clients and contractors",
+        "Track budgets and resolve issues proactively"
+      ],
       "responsibilities": [
         "Coordinate project timelines and deliverables",
         "Communicate with clients and contractors",
@@ -138,9 +168,15 @@
       "roleType": "Apprenticeship",
       "experience": "Fresher",
       "experienceLevel": "fresher",
-      "skills": ["craftsmanship"],
+      "salaryRange": "₹10-15K/month",
+      "skills": ["Learning Attitude", "Manual Dexterity", "Physical Fitness", "Attention to Detail"],
       "status": "open",
       "description": "Learn the art of stone craftsmanship under experienced master artisans.",
+      "whatYouDo": [
+        "Learn stone cutting and shaping techniques",
+        "Assist master craftsmen in daily operations",
+        "Develop fundamental craftsmanship skills"
+      ],
       "responsibilities": [
         "Assist senior craftsmen in stone work",
         "Learn cutting, shaping, and finishing techniques",
@@ -164,9 +200,15 @@
       "roleType": "Full-time",
       "experience": "4+ years",
       "experienceLevel": "3-5",
-      "skills": ["technical", "leadership"],
+      "salaryRange": "₹7-11 LPA",
+      "skills": ["Supply Chain Management", "Procurement", "Vendor Management", "ERP Systems"],
       "status": "closed",
       "description": "Manage supply chain operations ensuring timely procurement and delivery of materials.",
+      "whatYouDo": [
+        "Oversee end-to-end supply chain operations",
+        "Optimize procurement and inventory management",
+        "Build and maintain vendor relationships"
+      ],
       "responsibilities": [
         "Oversee procurement of raw materials",
         "Manage vendor relationships",
@@ -190,9 +232,15 @@
       "roleType": "Full-time",
       "experience": "6+ years",
       "experienceLevel": "5+",
-      "skills": ["design", "leadership", "technical"],
+      "salaryRange": "₹10-18 LPA",
+      "skills": ["Architecture", "AutoCAD", "Revit", "Project Management"],
       "status": "open",
       "description": "Lead architectural design projects incorporating our premium stone collections.",
+      "whatYouDo": [
+        "Design innovative architectural solutions",
+        "Lead design teams on major projects",
+        "Integrate premium stone in architectural concepts"
+      ],
       "responsibilities": [
         "Develop architectural concepts and designs",
         "Lead design team on major projects",
@@ -216,9 +264,15 @@
       "roleType": "Contract",
       "experience": "2+ years",
       "experienceLevel": "1-3",
-      "skills": ["craftsmanship", "technical"],
+      "salaryRange": "₹3-5 LPA",
+      "skills": ["Machine Operation", "Precision Cutting", "Safety Protocols", "Technical Reading"],
       "status": "open",
       "description": "Operate stone cutting machinery to precise specifications for various projects.",
+      "whatYouDo": [
+        "Operate advanced stone cutting machinery",
+        "Create precise cuts according to specifications",
+        "Perform quality inspections on cut pieces"
+      ],
       "responsibilities": [
         "Operate stone cutting equipment safely",
         "Cut stone to specified dimensions",
@@ -232,6 +286,294 @@
         "Ability to read technical drawings",
         "Safety certification preferred",
         "Physical stamina for manual work"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "HR Manager",
+      "location": "Mumbai",
+      "department": "Human Resources",
+      "roleType": "Full-time",
+      "experience": "5+ years",
+      "experienceLevel": "5+",
+      "salaryRange": "₹7-11 LPA",
+      "skills": ["Recruitment", "Employee Relations", "HR Policies", "Performance Management"],
+      "status": "open",
+      "description": "Lead HR operations and ensure a positive work environment for all team members.",
+      "whatYouDo": [
+        "Manage recruitment and onboarding processes",
+        "Handle employee relations and conflict resolution",
+        "Develop and implement HR policies"
+      ],
+      "responsibilities": [
+        "Oversee recruitment and hiring processes",
+        "Manage employee relations and engagement",
+        "Implement HR policies and procedures",
+        "Conduct performance reviews",
+        "Handle compensation and benefits"
+      ],
+      "requirements": [
+        "5+ years in HR management",
+        "MBA in HR or related field preferred",
+        "Strong knowledge of labor laws",
+        "Excellent interpersonal skills",
+        "Experience in manufacturing industry preferred"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Financial Analyst",
+      "location": "Mumbai",
+      "department": "Finance",
+      "roleType": "Full-time",
+      "experience": "3+ years",
+      "experienceLevel": "3-5",
+      "salaryRange": "₹6-9 LPA",
+      "skills": ["Financial Modeling", "Data Analysis", "Excel", "ERP Systems"],
+      "status": "open",
+      "description": "Analyze financial data and provide insights to drive business decisions.",
+      "whatYouDo": [
+        "Prepare financial reports and forecasts",
+        "Analyze business performance metrics",
+        "Support budgeting and planning processes"
+      ],
+      "responsibilities": [
+        "Prepare monthly financial reports",
+        "Conduct financial analysis and forecasting",
+        "Support budgeting processes",
+        "Identify cost optimization opportunities",
+        "Present insights to management"
+      ],
+      "requirements": [
+        "3+ years in financial analysis",
+        "CA/MBA in Finance preferred",
+        "Advanced Excel and financial modeling skills",
+        "Experience with ERP systems",
+        "Strong analytical abilities"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Sales Executive",
+      "location": "Delhi",
+      "department": "Sales",
+      "roleType": "Full-time",
+      "experience": "2+ years",
+      "experienceLevel": "1-3",
+      "salaryRange": "₹4-7 LPA + Incentives",
+      "skills": ["B2B Sales", "Client Relations", "Negotiation", "Product Knowledge"],
+      "status": "open",
+      "description": "Drive sales of premium stone products to architects, builders, and interior designers.",
+      "whatYouDo": [
+        "Identify and pursue new business opportunities",
+        "Build relationships with architects and designers",
+        "Present product offerings and close deals"
+      ],
+      "responsibilities": [
+        "Generate and qualify leads",
+        "Conduct product presentations",
+        "Negotiate contracts and pricing",
+        "Maintain client relationships",
+        "Achieve sales targets"
+      ],
+      "requirements": [
+        "2+ years in B2B sales",
+        "Experience in construction/interior industry preferred",
+        "Strong communication and presentation skills",
+        "Valid driving license",
+        "Target-oriented mindset"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Showroom Manager",
+      "location": "Mumbai",
+      "department": "Sales",
+      "roleType": "Full-time",
+      "experience": "4+ years",
+      "experienceLevel": "3-5",
+      "salaryRange": "₹5-8 LPA",
+      "skills": ["Retail Management", "Customer Service", "Team Leadership", "Visual Merchandising"],
+      "status": "open",
+      "description": "Manage showroom operations and ensure exceptional customer experience.",
+      "whatYouDo": [
+        "Oversee daily showroom operations",
+        "Lead and train showroom staff",
+        "Ensure outstanding customer service"
+      ],
+      "responsibilities": [
+        "Manage showroom staff and operations",
+        "Ensure excellent customer service",
+        "Maintain showroom displays and inventory",
+        "Drive showroom sales targets",
+        "Handle customer queries and complaints"
+      ],
+      "requirements": [
+        "4+ years in retail/showroom management",
+        "Experience in luxury goods preferred",
+        "Strong leadership skills",
+        "Customer-focused approach",
+        "Knowledge of interior design trends"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "IT Support Engineer",
+      "location": "Remote",
+      "department": "IT",
+      "roleType": "Full-time",
+      "experience": "2+ years",
+      "experienceLevel": "1-3",
+      "salaryRange": "₹4-6 LPA",
+      "skills": ["Technical Support", "Networking", "Windows/Linux", "Problem Solving"],
+      "status": "open",
+      "description": "Provide technical support and maintain IT infrastructure across all locations.",
+      "whatYouDo": [
+        "Troubleshoot hardware and software issues",
+        "Maintain network infrastructure",
+        "Support remote and on-site employees"
+      ],
+      "responsibilities": [
+        "Provide technical support to employees",
+        "Maintain computer systems and networks",
+        "Install and configure software/hardware",
+        "Manage user accounts and permissions",
+        "Document IT procedures"
+      ],
+      "requirements": [
+        "2+ years in IT support",
+        "Knowledge of Windows/Linux systems",
+        "Understanding of networking basics",
+        "Good communication skills",
+        "Relevant certifications preferred"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Content Writer",
+      "location": "Remote",
+      "department": "Marketing",
+      "roleType": "Full-time",
+      "experience": "2+ years",
+      "experienceLevel": "1-3",
+      "salaryRange": "₹3-5 LPA",
+      "skills": ["Content Writing", "SEO", "Social Media", "Research"],
+      "status": "open",
+      "description": "Create engaging content for website, blogs, and marketing materials.",
+      "whatYouDo": [
+        "Write blog posts and website content",
+        "Create social media content",
+        "Develop marketing collateral and product descriptions"
+      ],
+      "responsibilities": [
+        "Create website and blog content",
+        "Write product descriptions and brochures",
+        "Develop social media content",
+        "Conduct content research",
+        "Optimize content for SEO"
+      ],
+      "requirements": [
+        "2+ years of content writing experience",
+        "Excellent English writing skills",
+        "Understanding of SEO principles",
+        "Portfolio of published work",
+        "Knowledge of interior/architecture industry is a plus"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Warehouse Supervisor",
+      "location": "Rajasthan",
+      "department": "Operations",
+      "roleType": "Full-time",
+      "experience": "3+ years",
+      "experienceLevel": "3-5",
+      "salaryRange": "₹4-6 LPA",
+      "skills": ["Warehouse Management", "Inventory Control", "Team Supervision", "Logistics"],
+      "status": "open",
+      "description": "Supervise warehouse operations and ensure efficient material handling.",
+      "whatYouDo": [
+        "Oversee warehouse staff and daily operations",
+        "Manage inventory and stock levels",
+        "Coordinate shipping and receiving"
+      ],
+      "responsibilities": [
+        "Supervise warehouse team",
+        "Manage inventory control",
+        "Coordinate material handling",
+        "Ensure safety compliance",
+        "Optimize warehouse processes"
+      ],
+      "requirements": [
+        "3+ years in warehouse supervision",
+        "Knowledge of inventory management",
+        "Strong organizational skills",
+        "Experience with warehouse management systems",
+        "Physical fitness for warehouse environment"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Safety Officer",
+      "location": "Multi-location",
+      "department": "Health & Safety",
+      "roleType": "Full-time",
+      "experience": "4+ years",
+      "experienceLevel": "3-5",
+      "salaryRange": "₹5-7 LPA",
+      "skills": ["Safety Management", "Risk Assessment", "Compliance", "Training"],
+      "status": "open",
+      "description": "Ensure workplace safety and compliance with health and safety regulations.",
+      "whatYouDo": [
+        "Conduct safety audits and inspections",
+        "Develop and implement safety programs",
+        "Train employees on safety procedures"
+      ],
+      "responsibilities": [
+        "Conduct regular safety inspections",
+        "Develop safety policies and procedures",
+        "Conduct safety training programs",
+        "Investigate accidents and incidents",
+        "Ensure regulatory compliance"
+      ],
+      "requirements": [
+        "4+ years as safety officer",
+        "Safety certification required",
+        "Knowledge of industrial safety regulations",
+        "Strong training and communication skills",
+        "Experience in manufacturing environment"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Graphic Designer",
+      "location": "Mumbai",
+      "department": "Marketing",
+      "roleType": "Full-time",
+      "experience": "3+ years",
+      "experienceLevel": "3-5",
+      "salaryRange": "₹4-7 LPA",
+      "skills": ["Graphic Design", "Adobe Creative Suite", "Branding", "Visual Communication"],
+      "status": "open",
+      "description": "Create visually stunning designs for marketing campaigns and brand materials.",
+      "whatYouDo": [
+        "Design marketing collateral and advertisements",
+        "Create social media graphics and visuals",
+        "Develop brand identity elements"
+      ],
+      "responsibilities": [
+        "Design marketing materials and campaigns",
+        "Create product catalogs and brochures",
+        "Develop social media graphics",
+        "Maintain brand consistency",
+        "Collaborate with marketing team"
+      ],
+      "requirements": [
+        "3+ years in graphic design",
+        "Expert in Adobe Creative Suite",
+        "Strong portfolio demonstrating skills",
+        "Understanding of print and digital design",
+        "Attention to detail"
       ]
     }
   ],
@@ -261,8 +603,8 @@
     }
   },
   "filters": {
-    "locations": ["Mumbai", "Delhi", "Rajasthan", "Multi-location"],
-    "departments": ["Production", "Design", "Quality Control", "Marketing", "Operations"],
+    "locations": ["Mumbai", "Delhi", "Rajasthan", "Multi-location", "Remote"],
+    "departments": ["Production", "Design", "Quality Control", "Marketing", "Operations", "Sales", "Human Resources", "Finance", "IT", "Health & Safety"],
     "roleTypes": ["Full-time", "Part-time", "Contract", "Apprenticeship"],
     "experienceLevels": ["Fresher", "1-3 years", "3-5 years", "5+ years"],
     "skills": ["Craftsmanship", "Design", "Leadership", "Technical Skills"]

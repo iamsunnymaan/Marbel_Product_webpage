@@ -3,8 +3,35 @@
 // Filter functionality
 document.addEventListener('DOMContentLoaded', () => {
     initializeFilters();
+    initializeFilterDropdowns();
     loadJobPositions();
 });
+
+// Initialize filter dropdown functionality
+function initializeFilterDropdowns() {
+    const filterTitles = document.querySelectorAll('.filter-title');
+    
+    filterTitles.forEach(title => {
+        title.addEventListener('click', function() {
+            const filterOptions = this.nextElementSibling;
+            const isOpen = filterOptions.classList.contains('show');
+            
+            // Close all other dropdowns
+            document.querySelectorAll('.filter-options').forEach(opt => {
+                opt.classList.remove('show');
+            });
+            document.querySelectorAll('.filter-title').forEach(t => {
+                t.classList.remove('active');
+            });
+            
+            // Toggle current dropdown
+            if (!isOpen) {
+                filterOptions.classList.add('show');
+                this.classList.add('active');
+            }
+        });
+    });
+}
 
 // Initialize filter checkboxes event listeners
 function initializeFilters() {
@@ -111,6 +138,148 @@ async function loadJobPositions() {
         console.log('Job positions loaded:', data);
     } catch (error) {
         console.error('Error loading job positions:', error);
+        window.jobPositionsData = { jobPositions: [] };
+    }
+}
+
+// View job details in modal
+function viewJobDetails(positionTitle) {
+    if (!window.jobPositionsData || !window.jobPositionsData.jobPositions) {
+        console.error('Job data not loaded');
+        return;
+    }
+
+    // Find the job position
+    const job = window.jobPositionsData.jobPositions.find(
+        j => j.title === positionTitle
+    );
+
+    if (!job) {
+        console.error('Job not found:', positionTitle);
+        return;
+    }
+
+    // Create or get modal
+    let modal = document.getElementById('jobDetailsModal');
+    if (!modal) {
+        modal = createJobDetailsModal();
+        document.body.appendChild(modal);
+    }
+
+    // Populate modal with job data
+    modal.querySelector('.modal-job-title').textContent = job.title;
+    
+    const metaContainer = modal.querySelector('.modal-job-meta');
+    metaContainer.innerHTML = `
+        <span class="modal-meta-item"><i>📍</i> ${job.location}</span>
+        <span class="modal-meta-item"><i>💼</i> ${job.roleType}</span>
+        <span class="modal-meta-item"><i>⏱️</i> ${job.experience}</span>
+        <span class="modal-meta-item"><i>🏢</i> ${job.department}</span>
+    `;
+
+    // Salary and Status Info
+    const infoGrid = modal.querySelector('.modal-info-grid');
+    infoGrid.innerHTML = `
+        <div class="modal-info-item">
+            <div class="modal-info-label">Salary Range</div>
+            <div class="modal-info-value">${job.salaryRange || 'Competitive'}</div>
+        </div>
+        <div class="modal-info-item">
+            <div class="modal-info-label">Status</div>
+            <div class="modal-info-value">${job.status === 'open' ? '🟢 Actively Hiring' : 'Closed'}</div>
+        </div>
+    `;
+
+    modal.querySelector('.modal-description').textContent = job.description;
+
+    // Skills
+    const skillsContainer = modal.querySelector('.modal-skills');
+    if (job.skills && job.skills.length > 0) {
+        skillsContainer.innerHTML = job.skills
+            .map(skill => `<span class="skill-tag">${skill}</span>`)
+            .join('');
+    } else {
+        skillsContainer.innerHTML = '<span class="skill-tag">N/A</span>';
+    }
+
+    // What You'll Do
+    const whatYouDoList = modal.querySelector('.what-you-do-list');
+    if (job.whatYouDo && job.whatYouDo.length > 0) {
+        whatYouDoList.innerHTML = job.whatYouDo
+            .map(item => `<li>${item}</li>`)
+            .join('');
+    } else {
+        whatYouDoList.innerHTML = '<li>Details coming soon</li>';
+    }
+
+    const requirementsList = modal.querySelector('.requirements-list');
+    requirementsList.innerHTML = job.requirements
+        .map(item => `<li>${item}</li>`)
+        .join('');
+
+    // Set up apply button
+    modal.querySelector('.modal-apply-btn').onclick = () => {
+        modal.classList.remove('show');
+        openApplicationModal(job.title);
+    };
+
+    // Show modal
+    modal.classList.add('show');
+}
+
+// Create job details modal
+function createJobDetailsModal() {
+    const modal = document.createElement('div');
+    modal.id = 'jobDetailsModal';
+    modal.className = 'job-details-modal';
+    modal.innerHTML = `
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal-close" onclick="closeJobDetailsModal()">&times;</button>
+                <h2 class="modal-job-title"></h2>
+                <div class="modal-job-meta"></div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info-grid"></div>
+                <div class="modal-section">
+                    <h3>About the Role</h3>
+                    <p class="modal-description"></p>
+                </div>
+                <div class="modal-section">
+                    <h3>Skills Required</h3>
+                    <div class="modal-skills"></div>
+                </div>
+                <div class="modal-section">
+                    <h3>What You'll Do</h3>
+                    <ul class="modal-list what-you-do-list"></ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Requirements</h3>
+                    <ul class="modal-list requirements-list"></ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-close-btn" onclick="closeJobDetailsModal()">Close</button>
+                <button class="modal-apply-btn">Apply Now</button>
+            </div>
+        </div>
+    `;
+
+    // Close on outside click
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeJobDetailsModal();
+        }
+    });
+
+    return modal;
+}
+
+// Close job details modal
+function closeJobDetailsModal() {
+    const modal = document.getElementById('jobDetailsModal');
+    if (modal) {
+        modal.classList.remove('show');
     }
 }
 
