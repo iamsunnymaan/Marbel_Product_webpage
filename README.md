@@ -8,10 +8,10 @@ Magnetic Nav, Hero Slider, Filterable Collection, Gallery, Materials Carousel, L
 
 ## Tech Stack
 
-HTML5, CSS3, Vanilla JS, Google Fonts (Inter), Responsive (640px, 1024px)
+HTML5, CSS3, Vanilla JS, Google Fonts, Responsive (640px, 1024px)
 
 
 ## Status
 
-✅ Landing, Gallery | 🚧 Product, About, Career, Contact
+Landing, Gallery, Product, About, Career, Contact
 
