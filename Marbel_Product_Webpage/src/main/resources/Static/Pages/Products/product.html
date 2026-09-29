@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Marbel</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/contact-modal.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">MARBEL</div>
+
+        <nav class="nav-box">
+            <div class="nav-magnetic-bg"></div>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="../Home/index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../Products/product.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="../Gallery/gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="../About/about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../Career/career.html" class="nav-link">Career</a></li>
+                <li class="nav-item"><a href="../Home/index.html#address" class="nav-link">Address</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <button class="connect-btn">Let Connect</button>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="product-hero">
+        <div class="product-hero-content">
+            <h1>Premium Stone Collections</h1>
+            <p>Discover our extensive range of granite and marble for every space and style</p>
+        </div>
+    </section>
+
+    <!-- Main Collections -->
+    <section class="main-collections">
+        <div class="collections-wrapper">
+            <div class="title-wrapper">
+                <div class="section-title">Our Collections</div>
+            </div>
+            
+            <div class="main-collections-grid">
+                <div class="main-collection-card" data-collection="granite">
+                    <div class="collection-image">
+                        <img src="../../assets/granite-main.jpg" alt="Granite Collections">
+                    </div>
+                    <div class="collection-info">
+                        <h3>Granite Collections</h3>
+                        <p>Browse by colour or explore granite for specific spaces</p>
+                        <div class="collection-options">
+                            <a href="#granite-by-colour" class="option-link">By Colour</a>
+                            <a href="#granite-by-spaces" class="option-link">By Spaces</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-collection-card" data-collection="marble">
+                    <div class="collection-image">
+                        <img src="../../assets/marble-main.jpg" alt="Marble Collection">
+                    </div>
+                    <div class="collection-info">
+                        <h3>Marble Collection</h3>
+                        <p>Explore marble by colour, origin, pattern, or usage</p>
+                        <div class="collection-options">
+                            <a href="#marble-by-colours" class="option-link">By Colours</a>
+                            <a href="#marble-by-space" class="option-link">By Space</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Granite By Colour -->
+    <section class="product-section" id="granite-by-colour">
+        <div class="section-container">
+            <div class="title-wrapper">
+                <div class="section-title">Granite By Colour</div>
+            </div>
+            
+            <div class="colour-categories-grid">
+                <div class="colour-category" data-colour="black">
+                    <h4>Black Granite</h4>
+                    <ul class="product-list" id="granite-black"></ul>
+                </div>
+                <div class="colour-category" data-colour="blue">
+                    <h4>Blue Granite</h4>
+                    <ul class="product-list" id="granite-blue"></ul>
+                </div>
+                <div class="colour-category" data-colour="brown">
+                    <h4>Brown Granite</h4>
+                    <ul class="product-list" id="granite-brown"></ul>
+                </div>
+                <div class="colour-category" data-colour="green">
+                    <h4>Green Granite</h4>
+                    <ul class="product-list" id="granite-green"></ul>
+                </div>
+                <div class="colour-category" data-colour="grey">
+                    <h4>Grey Granite</h4>
+                    <ul class="product-list" id="granite-grey"></ul>
+                </div>
+                <div class="colour-category" data-colour="red">
+                    <h4>Red Granite</h4>
+                    <ul class="product-list" id="granite-red"></ul>
+                </div>
+                <div class="colour-category" data-colour="white">
+                    <h4>White Granite</h4>
+                    <ul class="product-list" id="granite-white"></ul>
+                </div>
+                <div class="colour-category" data-colour="yellow">
+                    <h4>Yellow Granite</h4>
+                    <ul class="product-list" id="granite-yellow"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Granite By Spaces -->
+    <section class="product-section alternate-bg" id="granite-by-spaces">
+        <div class="section-container">
+            <div class="title-wrapper">
+                <div class="section-title">Granite by Spaces</div>
+            </div>
+            
+            <div class="space-categories-grid">
+                <div class="space-category">
+                    <h4>Front Wall Cladding</h4>
+                    <ul class="product-list" id="granite-frontwall"></ul>
+                </div>
+                <div class="space-category">
+                    <h4>Highlighters</h4>
+                    <ul class="product-list" id="granite-highlighters"></ul>
+                </div>
+                <div class="space-category">
+                    <h4>Kitchen Top</h4>
+                    <ul class="product-list" id="granite-kitchen"></ul>
+                </div>
+                <div class="space-category">
+                    <h4>Parking</h4>
+                    <ul class="product-list" id="granite-parking"></ul>
+                </div>
+                <div class="space-category">
+                    <h4>Table Top</h4>
+                    <ul class="product-list" id="granite-tabletop"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marble By Colours -->
+    <section class="product-section" id="marble-by-colours">
+        <div class="section-container">
+            <div class="title-wrapper">
+                <div class="section-title">Marble by Colours</div>
+            </div>
+            
+            <div class="colour-categories-grid">
+                <div class="colour-category" data-colour="beige">
+                    <h4>Beige Marble</h4>
+                    <ul class="product-list" id="marble-beige"></ul>
+                </div>
+                <div class="colour-category" data-colour="black">
+                    <h4>Black Marble</h4>
+                    <ul class="product-list" id="marble-black"></ul>
+                </div>
+                <div class="colour-category" data-colour="blue">
+                    <h4>Blue Marble</h4>
+                    <ul class="product-list" id="marble-blue"></ul>
+                </div>
+                <div class="colour-category" data-colour="brown">
+                    <h4>Brown Marble</h4>
+                    <ul class="product-list" id="marble-brown"></ul>
+                </div>
+                <div class="colour-category" data-colour="green">
+                    <h4>Green Marble</h4>
+                    <ul class="product-list" id="marble-green"></ul>
+                </div>
+                <div class="colour-category" data-colour="grey">
+                    <h4>Grey Marble</h4>
+                    <ul class="product-list" id="marble-grey"></ul>
+                </div>
+                <div class="colour-category" data-colour="pink">
+                    <h4>Pink Marble</h4>
+                    <ul class="product-list" id="marble-pink"></ul>
+                </div>
+                <div class="colour-category" data-colour="red">
+                    <h4>Red Marble</h4>
+                    <ul class="product-list" id="marble-red"></ul>
+                </div>
+                <div class="colour-category" data-colour="white">
+                    <h4>White Marble</h4>
+                    <ul class="product-list" id="marble-white"></ul>
+                </div>
+                <div class="colour-category" data-colour="yellow">
+                    <h4>Yellow Marble</h4>
+                    <ul class="product-list" id="marble-yellow"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marble By Space -->
+    <section class="product-section alternate-bg" id="marble-by-space">
+        <div class="section-container">
+            <div class="title-wrapper">
+                <div class="section-title">Marble by Space</div>
+            </div>
+            
+            <div class="space-categories-grid">
+                <div class="space-category">
+                    <h4>Marble For Bedroom</h4>
+                    <ul class="product-list" id="marble-bedroom"></ul>
+                </div>
+                <div class="space-category">
+                    <h4>Marble For Flooring</h4>
+                    <ul class="product-list" id="marble-flooring"></ul>
+                </div>
+                <div class="space-category">
+                    <h4>Marble For Kitchen</h4>
+                    <ul class="product-list" id="marble-kitchen"></ul>
+                </div>
+                <div class="space-category">
+                    <h4>Marble for Living Room</h4>
+                    <ul class="product-list" id="marble-livingroom"></ul>
+                </div>
+                <div class="space-category">
+                    <h4>Marble for Wall</h4>
+                    <ul class="product-list" id="marble-wall"></ul>
+                </div>
+                <div class="space-category">
+                    <h4>Marble For Washroom</h4>
+                    <ul class="product-list" id="marble-washroom"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner-section">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Space?</h2>
+            <p>Let our experts help you choose the perfect stone for your project</p>
+            <div class="cta-buttons">
+                <button class="connect-btn cta-primary">Get Free Consultation</button>
+                <button class="connect-btn cta-secondary">Download Catalogue</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">MARBEL</div>
+                <p class="footer-tagline"> Sculpted by Nature, Refined by Human Hands </p>
+                <p class="footer-description">Crafting timeless luxury stone masterpieces with premium natural materials and exceptional craftsmanship since 2000.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Facebook">f</a>
+                    <a href="#" class="social-link" aria-label="Instagram">i</a>
+                    <a href="#" class="social-link" aria-label="Twitter">t</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="../Products/product.html">All Products</a></li>
+                        <li><a href="#">Marble Collection</a></li>
+                        <li><a href="#">Granite Selection</a></li>
+                        <li><a href="#">Natural Stones</a></li>
+                        <li><a href="#">Custom Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="../About/about.html">About Us</a></li>
+                        <li><a href="../Career/career.html">Careers</a></li>
+                        <li><a href="#">Certifications</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="../Home/index.html#address">Visit Showroom</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Request Catalog</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><strong>Phone:</strong> <a href="tel:+910000000000">+91 00000 00000</a></li>
+                        <li><strong>Email:</strong> <a href="mailto:hello@example.com">hello@example.com</a></li>
+                        <li><strong>Hours:</strong> Mon - Sat, 9 AM - 6 PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 MARBEL. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/api-client.js"></script>
+    <script src="product.js"></script>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,5 @@
 # MARBEL Product Webpage
 
-- `web/`  - website (HTML pages, `css/`, `js/`, `assets/`, `admin/` panel)
-- `api/`  - Spring Boot REST API (`src/main/java/com/marbel/...`)
+- `Marbel_Product_Webpage/` - Spring Boot project
+  - `src/main/java/com/marbel/...` - REST API
+  - `src/main/resources/Static/` - website (`Pages/`, `css/`, `js/`, `assets/`, `admin/`)
