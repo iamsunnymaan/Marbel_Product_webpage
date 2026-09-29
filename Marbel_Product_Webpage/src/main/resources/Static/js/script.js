@@ -166,36 +166,41 @@ document.addEventListener('DOMContentLoaded', function() {
     startAutoSlide();
 });
 
-// COLLECTION CATEGORY TABS
+// COLLECTION ACCORDION
 document.addEventListener('DOMContentLoaded', function() {
-    const tabs = Array.from(document.querySelectorAll('.mc-tab'));
-    const panels = document.querySelectorAll('.mc-panel');
+    const panels = Array.from(document.querySelectorAll('.mc-panel'));
 
-    if (!tabs.length) return;
+    if (!panels.length) return;
 
-    function select(tab) {
-        tabs.forEach(t => {
-            const on = t === tab;
-            t.classList.toggle('active', on);
-            t.setAttribute('aria-selected', on);
-            t.tabIndex = on ? 0 : -1;
+    function open(panel) {
+        panels.forEach(p => {
+            const on = p === panel;
+            p.classList.toggle('active', on);
+            p.setAttribute('aria-expanded', on);
         });
-        panels.forEach(p => p.classList.toggle('active', p.dataset.category === tab.dataset.category));
     }
 
-    tabs.forEach((tab, i) => {
-        tab.addEventListener('click', () => select(tab));
-        tab.addEventListener('keydown', e => {
-            const step = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
+    panels.forEach((panel, i) => {
+        panel.addEventListener('click', () => open(panel));
+        panel.addEventListener('mouseenter', () => {
+            if (window.matchMedia('(hover: hover) and (min-width: 769px)').matches) open(panel);
+        });
+        panel.addEventListener('keydown', e => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                open(panel);
+                return;
+            }
+            const step = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
             if (!step) return;
             e.preventDefault();
-            const next = tabs[(i + step + tabs.length) % tabs.length];
+            const next = panels[(i + step + panels.length) % panels.length];
             next.focus();
-            select(next);
+            open(next);
         });
     });
 
-    select(tabs.find(t => t.classList.contains('active')) || tabs[0]);
+    open(panels.find(p => p.classList.contains('active')) || panels[0]);
 });
 
 // CONTACT MODAL FUNCTIONALITY
